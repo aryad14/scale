@@ -333,10 +333,15 @@ header button {
 }
 
 
+/* Video Page */
+.video-container {
+    padding: 0 4rem;
+}
+
 
 /* Footer */
 .footer-container {
-    padding: 1rem 3rem;
+    padding: 1rem 4rem;
 }
 
 .footer-container>div>h5 {
@@ -411,7 +416,7 @@ header button {
     .hp-about-section .hp-about-body {
         margin: 1.5rem 5rem;
     }
-    
+
 }
 
 @media (max-width: 768px) {
@@ -449,7 +454,12 @@ header button {
     .gallery-page-section {
         margin: 1rem 2rem;
     }
-    
+
+    /* Video Page */
+    .video-container {
+        padding: 0 2rem;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -521,5 +531,10 @@ header button {
 
     .gallery-page-section {
         margin: 1rem 1.5rem;
+    }
+
+    /* Video Page */
+    .video-container {
+        padding: 0 0.5rem;
     }
 }
