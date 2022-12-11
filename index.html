@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anand Patel - Home</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+
+    <!-- Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=ranade@700,300,100,400,500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=recia@700,300,500,600,400&display=swap" rel="stylesheet">
+
+    <style>
+        .intro-carousel .carousel {
+            height: 100vh;
+            width: 100%;
+        }
+
+        .intro-carousel .carousel-inner,
+        .carousel-item {
+            width: 100%;
+            height: 100%;
+            /* overflow: hidden; */
+        }
+
+        .intro-carousel .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            filter: brightness(65%);
+            object-position: center;
+            /* background-position: center center; */
+        }
+
+        header {
+            position: absolute;
+            z-index: 1050 !important;
+            width: 100%;
+            color: #fff;
+        }
+
+        .nav-link::after {
+            content: '';
+            width: 0%;
+            display: block;
+            height: 1.2px;
+            background-color: #fff;
+            transition: width .35s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .link-active::after {
+            content: '' !important;
+            display: block !important;
+            width: 100% !important;
+            height: 1px !important;
+            background: #fff !important;
+        }
+
+        header .nav-link {
+            color: #fff !important;
+        }
+
+        header .navbar-brand {
+            color: #fff !important;
+        }
+
+        header>button {
+            color: #fff;
+        }
+
+        .icons-offcanvas a {
+            color: #000 !important;
+        }
+
+        .intro-carousel .carousel-caption {
+            height: 100%;
+            bottom: -40%;
+            display: block !important;
+        }
+
+        .intro-carousel .carousel-caption h3 {
+            font-family: 'Recia', serif;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-size: 54px;
+        }
+
+        .intro-carousel .carousel-caption h5 {
+            margin-top: 3rem;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-family: 'Ranade', sans-serif;
+            font-weight: 400;
+        }
+
+        .carousel-control-prev {
+            justify-content: start;
+            padding-left: 2rem;
+        }
+
+        .carousel-control-next {
+            justify-content: end;
+            padding-right: 2rem;
+        }
+
+
+        /* Styling for Gallery */
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Change Column Count to change Columns in the Gallery */
+        #app {
+            -webkit-column-count: 4;
+            -moz-column-count: 4;
+            column-count: 3;
+            -webkit-column-gap: 15px;
+            -moz-column-gap: 15px;
+            column-gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            #app {
+                column-gap: 5px;
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #app {
+                column-gap: 5px;
+            }
+
+            #app img {
+                margin-bottom: 5px;
+            }
+        }
+
+
+
+
+        @media (max-width: 768px) {
+            .intro-carousel .carousel-caption h3 {
+                font-family: 'Gambetta', serif;
+                letter-spacing: 1px;
+                font-weight: 400;
+                font-size: 9vw;
+            }
+
+            .intro-carousel .carousel-caption h5 {
+                margin-top: 3rem;
+                text-transform: uppercase;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .intro-carousel .carousel-caption h3 {
+                font-family: 'Gambetta', serif;
+                letter-spacing: 1px;
+                font-weight: 400;
+                font-size: 38px;
+            }
+
+            .intro-carousel .carousel-caption h5 {
+                margin-top: 1.5rem;
+                text-transform: uppercase;
+                font-size: 13px;
+                letter-spacing: 1px;
+                line-height: 1.8;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <header class="d-flex justify-content-lg-between justify-content-start align-items-center">
+        <nav>
+            <ul class="navbar-nav navbar-nav-left flex-row">
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Gallery
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="gallery-1.html">Gallery 1x1</a></li>
+                        <li><a class="dropdown-item" href="gallery-2.html">Gallery 2x2</a></li>
+                        <li><a class="dropdown-item" href="gallery-3.html">Gallery 3x3</a></li>
+                        <li><a class="dropdown-item" href="gallery-4.html">Gallery 4x4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Video
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="video-1.html">Video 1x1</a></li>
+                        <li><a class="dropdown-item" href="video-2.html">Video 2x2</a></li>
+                        <li><a class="dropdown-item" href="video-3.html">Video 3x3</a></li>
+                        <li><a class="dropdown-item" href="video-4.html">Video 4x4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Collection
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="col-1.html">Collection 1x1</a></li>
+                        <li><a class="dropdown-item" href="col-2.html">Collection 2x2</a></li>
+                        <li><a class="dropdown-item" href="col-3.html">Collection 3x3</a></li>
+                        <li><a class="dropdown-item" href="col-4.html">Collection 4x4</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <a href="index.html" class="navbar-brand">Anand Patel</a>
+
+
+            <ul class="navbar-nav navbar-nav-right flex-row">
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="exhibit.html" class="nav-link">Exhibit</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="order-2 ms-auto d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header w-100 d-flex justify-content-end">
+            <button type="button" class="p-4" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <ul class="navbar-nav offcanvas-nav justify-content-center align-items-center mt-5">
+                <li class="nav-item">
+                    <a class="nav-link offlink-active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Gallery
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="gallery-1.html">Gallery 1x1</a></li>
+                        <li><a class="dropdown-item" href="gallery-2.html">Gallery 2x2</a></li>
+                        <li><a class="dropdown-item" href="gallery-3.html">Gallery 3x3</a></li>
+                        <li><a class="dropdown-item" href="gallery-4.html">Gallery 4x4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Video
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="video-1.html">Video 1x1</a></li>
+                        <li><a class="dropdown-item" href="video-2.html">Video 2x2</a></li>
+                        <li><a class="dropdown-item" href="video-3.html">Video 3x3</a></li>
+                        <li><a class="dropdown-item" href="video-4.html">Video 4x4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Collection
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="col-1.html">Collection 1x1</a></li>
+                        <li><a class="dropdown-item" href="col-2.html">Collection 2x2</a></li>
+                        <li><a class="dropdown-item" href="col-3.html">Collection 3x3</a></li>
+                        <li><a class="dropdown-item" href="col-4.html">Collection 4x4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="exhibit.html">Exhibit</a>
+                </li>
+            </ul>
+            <div
+                class="icons-offcanvas ms-2 d-flex justify-content-center align-items-center fixed-bottom mb-4 flex-wrap">
+                <div class="text-center w-100">
+                    <a href="#" class="text-dark"><i class="bi bi-facebook mx-2 fw-lighter"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-instagram mx-2 fw-lighter"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-share mx-2 fw-lighter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="intro-carousel">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/divyanshi-verma-h3SyJYsqYSo-unsplash.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>
+                            Indian Culture Photography
+                        </h3>
+                        <h5>Capturing the Moment</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/manyu-varma-aDXV4GbqHcQ-unsplash.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>
+                            Indian Culture Photography
+                        </h3>
+                        <h5>Capturing the Moment</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Homepage About Section -->
+    <section class="hp-about-section d-flex flex-column justify-content-center">
+        <div class="hp-about-body d-flex flex-column">
+            <h3>Hello! I am Anand.</h3>
+            <h5>Write something about yourself here. Paragraph text comes here. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </h5>
+        </div>
+    </section>
+
+
+    <!-- Browse My Work Section -->
+    <section class="hp-collection">
+        <div class="hp-col-bg">
+            <div class="hp-col-head">
+                <h3>Browse My Work</h3>
+            </div>
+            <div class="hp-col-links">
+                <div class="collection-section">
+                    <div class="row mx-md-4 mx-1 my-md-5 my-0 gy-4">
+                        <div class="col-md-3">
+                            <div class="hovereffect">
+                                <div class="img-card"
+                                    style="background: url('img/subro-roy-Cp9kymo4RJk-unsplash.jpg');">
+                                </div>
+                                <div class="overlay">
+                                    <p class="d-flex justify-content-center">
+                                        <a href="col-gallery-3.html"><button
+                                                class="btn btn-dark px-4 py-2">View</button></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="img-col-head">
+                                <h3>Gallery 1</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="hovereffect">
+                                <div class="img-card"
+                                    style="background: url('img/manyu-varma-mM6cUV3B9M8-unsplash.jpg');">
+                                </div>
+                                <div class="overlay">
+                                    <p class="d-flex justify-content-center">
+                                        <a href="col-gallery-3.html"><button
+                                                class="btn btn-dark px-4 py-2">View</button></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="img-col-head">
+                                <h3>Gallery 2</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="hovereffect">
+                                <div class="img-card"
+                                    style="background: url('img/manyu-varma-VrBZg3TtNAw-unsplash.jpg');">
+                                </div>
+                                <div class="overlay">
+                                    <p class="d-flex justify-content-center">
+                                        <a href="col-gallery-3.html"><button
+                                                class="btn btn-dark px-4 py-2">View</button></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="img-col-head">
+                                <h3>Gallery 3</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="hovereffect">
+                                <div class="img-card" style="background: url('img/siby-QXIBCvvA_jc-unsplash.jpg');">
+                                </div>
+                                <div class="overlay">
+                                    <p class="d-flex justify-content-center">
+                                        <a href="col-gallery-3.html"><button
+                                                class="btn btn-dark px-4 py-2">View</button></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="img-col-head">
+                                <h3>Gallery 4</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-dark">See my Work</button>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div id="testimonials" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h5>Client Name</h5>
+                    <h3>Client Testimonial or a Quote comes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h3>
+                </div>
+                <div class="carousel-item">
+                    <h5>Client Name</h5>
+                    <h3>Client Testimonial or a Quote comes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h3>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer-container w-100">
+        <div
+            class="d-flex flex-column flex-md-row justify-content-md-between justify-content-center align-items-center gap-3">
+            <div class="footer-content-left d-flex align-items-center">
+                <a href="#" class="text-dark"><i class="bi bi-twitter mx-2"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-facebook mx-2"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-share mx-2"></i></a>
+            </div>
+            <h5 class="me-md-auto">Copyright Text comes Here</h5>
+            <div class="footer-content-right">
+                <h5>
+                    Made with <a href="#" class="text-dark">Udee Space</a>
+                </h5>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
