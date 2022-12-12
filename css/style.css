@@ -399,6 +399,65 @@ header button {
 
 
 
+/* Contact Page */
+.contact-container {
+    margin: 4rem 10rem;
+}
+
+
+.contact-container .contact-img-left {
+    width: 100%;
+}
+
+.contact-container .contact-img-left img {
+    max-width: 100%;
+}
+
+.contact-container .contact-right-head h3 {
+    font-family: 'recia', serif;
+    font-size: 45px;
+    margin-bottom: 2rem;
+}
+
+.contact-container .contact-right-head h5 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #777;
+    font-family: 'ranade', sans-serif;
+}
+
+.contact-container form {
+    margin-top: 2rem;
+}
+
+.contact-container form input {
+    padding: 0.75rem;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+    border-radius: 0;
+}
+
+.contact-container form input:focus,
+.contact-container form textarea:focus {
+    /* border: none; */
+    box-shadow: none;
+    outline: #000;
+}
+
+.contact-container form button {
+    padding: 1.25rem 2.5rem;
+    font-size: 18px;
+}
+
+.contact-container form button:hover {
+    background-color: rgba(0, 0, 0, 0.758);
+}
+
+
+
 /* Footer */
 .footer-container {
     padding: 1rem 4rem;
@@ -537,6 +596,12 @@ header button {
         padding: 0 2rem;
     }
 
+
+    /* Contact Page */
+    .contact-container {
+        margin: 2rem 3rem;
+    }
+
     
 
 }
@@ -640,5 +705,27 @@ header button {
         line-height: 1.4;
         color: #777777;
         font-size: 15px;
+    }
+
+
+    /* Contact Page */
+    .contact-heading h3 {
+        font-size: 35px;
+        font-family: 'Gambetta', serif;
+        font-weight: 400;
+    }
+
+    .contact-container {
+        margin: 2rem 1.25rem;
+    }
+
+    .contact-container .contact-right-head h3 {
+        font-family: 'recia', serif;
+        font-size: 35px !important;
+        margin-bottom: 2rem;
+    }
+
+    .contact-container .contact-right-head h4 {
+        font-size: 14px !important;
     }
 }
