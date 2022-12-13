@@ -19,104 +19,6 @@
     <link href="https://api.fontshare.com/v2/css?f[]=recia@700,300,500,600,400&display=swap" rel="stylesheet">
 
     <style>
-        .intro-carousel .carousel {
-            height: 100vh;
-            width: 100%;
-        }
-
-        .intro-carousel .carousel-inner,
-        .carousel-item {
-            width: 100%;
-            height: 100%;
-            /* overflow: hidden; */
-        }
-
-        .intro-carousel .carousel-item img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            filter: brightness(65%);
-            object-position: center;
-            /* background-position: center center; */
-        }
-
-        header {
-            position: absolute;
-            z-index: 1050 !important;
-            width: 100%;
-            color: #fff;
-        }
-
-        .nav-link::after {
-            content: '';
-            width: 0%;
-            display: block;
-            height: 1.2px;
-            background-color: #fff;
-            transition: width .35s;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
-        .link-active::after {
-            content: '' !important;
-            display: block !important;
-            width: 100% !important;
-            height: 1px !important;
-            background: #fff !important;
-        }
-
-        header .nav-link {
-            color: #fff !important;
-        }
-
-        header .navbar-brand {
-            color: #fff !important;
-        }
-
-        header>button {
-            color: #fff;
-        }
-
-        .icons-offcanvas a {
-            color: #000 !important;
-        }
-
-        .intro-carousel .carousel-caption {
-            height: 100%;
-            bottom: -40%;
-            display: block !important;
-        }
-
-        .intro-carousel .carousel-caption h3 {
-            font-family: 'Recia', serif;
-            letter-spacing: 1px;
-            font-weight: 500;
-            font-size: 54px;
-        }
-
-        .intro-carousel .carousel-caption h5 {
-            margin-top: 3rem;
-            text-transform: uppercase;
-            font-size: 16px;
-            letter-spacing: 1px;
-            font-family: 'Ranade', sans-serif;
-            font-weight: 400;
-        }
-
-        .carousel-control-prev {
-            justify-content: start;
-            padding-left: 2rem;
-        }
-
-        .carousel-control-next {
-            justify-content: end;
-            padding-right: 2rem;
-        }
-
-
         /* Styling for Gallery */
         .row {
             margin: 0;
@@ -149,47 +51,6 @@
                 margin-bottom: 5px;
             }
         }
-
-
-
-
-        @media (max-width: 768px) {
-            .intro-carousel .carousel-caption h3 {
-                font-family: 'Gambetta', serif;
-                letter-spacing: 1px;
-                font-weight: 400;
-                font-size: 9vw;
-            }
-
-            .intro-carousel .carousel-caption h5 {
-                margin-top: 3rem;
-                text-transform: uppercase;
-                font-size: 14px;
-                letter-spacing: 1px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .intro-carousel .carousel-caption h3 {
-                font-family: 'Gambetta', serif;
-                letter-spacing: 1px;
-                font-weight: 400;
-                font-size: 38px;
-            }
-
-            .intro-carousel .carousel-caption h5 {
-                margin-top: 1.5rem;
-                text-transform: uppercase;
-                font-size: 13px;
-                letter-spacing: 1px;
-                line-height: 1.8;
-            }
-
-            .carousel-control-prev,
-            .carousel-control-next {
-                display: none !important;
-            }
-        }
     </style>
 </head>
 
@@ -197,7 +58,7 @@
 
 
     <!-- Navbar -->
-    <header class="d-flex justify-content-lg-between justify-content-start align-items-center">
+    <header class="d-flex justify-content-lg-between justify-content-start align-items-center hp-nav">
         <nav>
             <ul class="navbar-nav navbar-nav-left flex-row">
                 <li class="nav-item dropdown">
@@ -456,32 +317,6 @@
             <button class="btn btn-dark">See my Work</button>
         </div>
     </section>
-
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div id="testimonials" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <h5>Client Name</h5>
-                    <h3>Client Testimonial or a Quote comes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h3>
-                </div>
-                <div class="carousel-item">
-                    <h5>Client Name</h5>
-                    <h3>Client Testimonial or a Quote comes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h3>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonials" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonials" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
 
 
     <!-- Footer -->

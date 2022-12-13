@@ -33,6 +33,103 @@ header button {
     font-size: 26px;
 }
 
+.intro-carousel .carousel {
+    height: 100vh;
+    width: 100%;
+}
+
+.intro-carousel .carousel-inner,
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.intro-carousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(65%);
+    object-position: center;
+    /* background-position: center center; */
+}
+
+.hp-nav {
+    position: absolute;
+    z-index: 1050 !important;
+    width: 100%;
+    color: #fff;
+}
+
+.hp-nav .nav-link::after {
+    content: '';
+    width: 0%;
+    display: block;
+    height: 1.2px;
+    background-color: #fff;
+    transition: width .35s;
+}
+
+.hp-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.hp-nav .link-active::after {
+    content: '' !important;
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: #fff !important;
+}
+
+.hp-nav .nav-link {
+    color: #fff !important;
+}
+
+.hp-nav .navbar-brand {
+    color: #fff !important;
+}
+
+.hp-nav>button {
+    color: #fff;
+}
+
+.icons-offcanvas a {
+    color: #000 !important;
+}
+
+.intro-carousel .carousel-caption {
+    height: 100%;
+    bottom: -40%;
+    display: block !important;
+}
+
+.intro-carousel .carousel-caption h3 {
+    font-family: 'Recia', serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 54px;
+}
+
+.intro-carousel .carousel-caption h5 {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Ranade', sans-serif;
+    font-weight: 400;
+}
+
+.intro-carousel .carousel-control-prev {
+    justify-content: start;
+    padding-left: 2rem;
+}
+
+.intro-carousel .carousel-control-next {
+    justify-content: end;
+    padding-right: 2rem;
+}
+
 
 .navbar-brand {
     font-family: 'Recia', serif;
@@ -290,43 +387,6 @@ header button {
 }
 
 
-/* Homepage Testimonials */
-.testimonials-section {
-    margin: 2rem 5rem;
-    background-color: #fff;
-    color: #000 !important;
-    height: 400px;
-    text-align: center;
-}
-
-.testimonials-section .carousel {
-    height: 100%;
-}
-
-.testimonials-section .carousel-inner {
-    height: 100%;
-}
-
-.testimonials-section .carousel-item {
-    height: auto;
-    padding: 6rem 10rem;
-}
-
-.testimonials-section .carousel-item h3 {
-    font-family: 'recia', serif;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 1.2;
-    margin-top: 2rem;
-}
-
-.testimonials-section .carousel-item h5 {
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-
 /* Gallery Page */
 .gallery-page-section {
     margin: 1rem 4rem;
@@ -499,7 +559,7 @@ header button {
 
 @media (max-width: 992px) {
     nav {
-        justify-content: start;
+        justify-content: center;
     }
 
     header {
@@ -556,6 +616,21 @@ header button {
 }
 
 @media (max-width: 768px) {
+
+    .intro-carousel .carousel-caption h3 {
+        font-family: 'Gambetta', serif;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 9vw;
+    }
+
+    .intro-carousel .carousel-caption h5 {
+        margin-top: 3rem;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
     .hp-about-body h3 {
         font-size: 7vw;
     }
@@ -566,25 +641,6 @@ header button {
 
     .hp-col-head h3 {
         font-size: 7vw;
-    }
-
-    .testimonials-section {
-        margin: 1rem 1rem;
-
-    }
-
-
-    .testimonials-section .carousel-item {
-        height: auto;
-        padding: auto 2rem;
-    }
-
-    .testimonials-section .carousel-item h3 {
-        font-size: 30px;
-    }
-
-    .testimonials-section .carousel-item h5 {
-        font-size: 16px;
     }
 
     .gallery-page-section {
@@ -608,6 +664,25 @@ header button {
 
 @media (max-width: 576px) {
 
+    .intro-carousel .carousel-caption h3 {
+        font-family: 'Gambetta', serif;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 38px;
+    }
+
+    .intro-carousel .carousel-caption h5 {
+        margin-top: 1.5rem;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 1px;
+        line-height: 1.8;
+    }
+
+    .intro-carousel .carousel-control-prev,
+    .intro-carousel .carousel-control-next {
+        display: none !important;
+    }
 
     header button i {
         font-size: 26px;
@@ -641,36 +716,6 @@ header button {
         font-family: 'recia', serif;
         font-size: 16px;
         font-weight: 400;
-    }
-
-
-
-    .testimonials-section {
-        margin: 1rem 1.5rem;
-        background-color: #fff;
-        color: #000 !important;
-        height: 400px;
-        text-align: center;
-    }
-
-
-    .testimonials-section .carousel-item {
-        height: auto;
-        padding: 4.5rem 1.5rem;
-    }
-
-    .testimonials-section .carousel-item h3 {
-        font-family: 'Gambetta', serif;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 1.2;
-        margin-bottom: 2rem;
-    }
-
-    .testimonials-section .carousel-item h5 {
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: 8px;
     }
 
     .gallery-page-section {
