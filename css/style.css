@@ -658,7 +658,7 @@ header button {
         margin: 2rem 3rem;
     }
 
-    
+
 
 }
 
@@ -710,11 +710,11 @@ header button {
     }
 
     .hp-col-bg button {
-        padding: 1.5rem 2.5rem;
+        padding: 1.25rem 1.5rem;
         margin-top: 1rem;
         margin-right: auto;
         font-family: 'recia', serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
     }
 
@@ -750,6 +750,10 @@ header button {
         line-height: 1.4;
         color: #777777;
         font-size: 15px;
+    }
+
+    .about-container .col-lg-12 button {
+        padding: 1rem 1.5rem;
     }
 
 
